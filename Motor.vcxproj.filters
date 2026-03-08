@@ -35,6 +35,15 @@
     <ClCompile Include="src\SceneManager.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\FlappyBirdScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InstructionsScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameOverScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Engine.h">
@@ -80,6 +89,24 @@
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="include\SceneManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Bird.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Pipe.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FlappyBirdScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\HUD.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\InstructionsScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GameOverScene.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>

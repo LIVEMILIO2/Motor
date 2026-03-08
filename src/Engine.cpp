@@ -2,20 +2,20 @@
 #include "PlayScene.h"
 #include "raylib.h"
 #include "Log.h"
-
+#include "MenuScene.h"
+#include "FlappyBirdScene.h"
 Engine::Engine() {
 	Log::print("Engine creado");
 	
 }
 
 void Engine::intialize() {
-	// Initialization code here
-	setlocale(LC_ALL, ""); // Configurar idiom
+	setlocale(LC_ALL, "");
 	InitWindow(800, 450, "Raylib Basics Engine");
 	InitAudioDevice();
 	SetTargetFPS(60);
 	Log::print("Se inicializo engine");
-	sceneManager.changeScene(&PlayScene::instance());
+	sceneManager.changeScene(&MenuScene::instance());  // <--- cambiar a MenuScene
 }
 
 void Engine::run() {

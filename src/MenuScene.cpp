@@ -4,7 +4,8 @@
 #include "raylib.h"
 #include "raygui.h"
 #include "Log.h"
-
+#include "FlappyBirdScene.h"
+#include "InstructionsScene.h"
 MenuScene::MenuScene()
 {
    
@@ -49,16 +50,27 @@ void MenuScene::update()
 
 void MenuScene::draw()
 {
+    // Salir del modo cámara para dibujar GUI en coordenadas de pantalla
+    EndMode2D();
+
+    // Dibujar botones y otros elementos de GUI
     DrawText("Menu Scene!", 190, 200, 20, LIGHTGRAY);
-	Rectangle buttonRect = { 200, 100, 200, 100 };
-    if (GuiButton(buttonRect, "#191#Show Message")) {
-		Log::print("Button Clicked in MenuScene");
-		eventManager.emit(ClickButtonEvent{ "Show button"});
+    Rectangle playBtn = { 200, 100, 200, 40 };
+    Rectangle instrBtn = { 200, 160, 200, 40 };
+    if (GuiButton(playBtn, "Play Flappy Bird")) {
+        SceneManager::instance().changeScene(&FlappyBirdScene::instance());
+    }
+    if (GuiButton(instrBtn, "Instructions")) {
+        SceneManager::instance().changeScene(&InstructionsScene::instance());
     }
 
-	DrawTexture(*tex, 300, 250, WHITE);
-	DrawTextEx(*font, "Menú Principal", { 10,10 }, 32, 2, DARKBLUE);
-	gui.draw();
+    // Volver a entrar al modo cámara si después quieres dibujar algo en coordenadas del mundo
+    BeginMode2D(cam);
+
+    // El resto de dibujo (texturas, etc.) que dependan de la cámara
+    DrawTexture(*tex, 300, 250, WHITE);
+    DrawTextEx(*font, "Menú Principal", { 10,10 }, 32, 2, DARKBLUE);
+    gui.draw();
 }
 
 

@@ -1,0 +1,10 @@
+﻿  GUI.cpp
+  MenuScene.cpp
+C:\Users\emili\OneDrive\Desktop\Raylib_master-main\RaylibBasics\src\GUI.cpp(4,10): error C1083: No se puede abrir el archivo incluir: 'raygui.h': No such file or directory
+C:\Users\emili\OneDrive\Desktop\Raylib_master-main\RaylibBasics\src\MenuScene.cpp(5,10): error C1083: No se puede abrir el archivo incluir: 'raygui.h': No such file or directory
+  Engine.cpp
+  main.cpp
+C:\Users\emili\OneDrive\Desktop\Raylib_master-main\RaylibBasics\src\main.cpp(6,10): error C1083: No se puede abrir el archivo incluir: 'raygui.h': No such file or directory
+  PlayScene.cpp
+  SceneManager.cpp
+  Generando código...

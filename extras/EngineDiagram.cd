@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Engine">
+    <Position X="1.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAABAAIAAAAAAAAQAAAABAAABAAEAAA=</HashCode>
+      <FileName>include\Engine.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="sceneManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SceneManager">
+    <Position X="4.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAIAAAAAAABAAAAAAAACAAAEAAQ=</HashCode>
+      <FileName>include\SceneManager.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="currentScene" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EventManager">
+    <Position X="10.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAIAAIBAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\EventManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Log">
+    <Position X="1.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\Log.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhysicsSystem">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAEAAAAAAAAADCAAABAAARAAAAAAAAAEEAEAAA=</HashCode>
+      <FileName>include\PhysicsSystem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ResourceManager">
+    <Position X="4.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAgAAAEAEABAgAAAAAAEAAAEABEAAAoAAAgACAYAAA=</HashCode>
+      <FileName>include\ResourceManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scene">
+    <Position X="7.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMAAACAAAoAQAgAAAAIACAAAQBAAAQAAAAAAAACEAAA=</HashCode>
+      <FileName>include\Scene.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="eventManager" />
+      <Field Name="resourceManager" />
+      <Field Name="physics" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Entity">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAACAAAAAAAAAAAAIAANAAACAEAAAAAAAEIABEAAA=</HashCode>
+      <FileName>include\Entity.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PBox">
+    <Position X="14" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>include\Bodies.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PCircle">
+    <Position X="10.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\Bodies.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GUI">
+    <Position X="1.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAIIAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>include\GUI.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuScene">
+    <Position X="6" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIIAAABAAIAAAAAAAIIAAAAAAABAAIAAAAAAAAAEAAQ=</HashCode>
+      <FileName>include\MenuScene.h</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gui" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlayScene">
+    <Position X="8.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AYAAAAAAAIAAAgAAQAIAAAAADABAQAAAAAAQACAEABA=</HashCode>
+      <FileName>include\PlayScene.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PhysicsEntity">
+    <Position X="12.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASAAQAAAAAAAABAAAAAAAAAQAZAABACAAAAAAAAEAAA=</HashCode>
+      <FileName>include\PhysicsEntity.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,6 @@
+C:\Users\emili\source\repos\Motor\Motor\build\bin\x64\Debug\raylib.dll
+C:\Users\emili\source\repos\Motor\Motor\build\bin\x64\Debug\glfw3.dll
+C:\Users\emili\source\repos\Motor\Motor\build\obj\x64\Debug\Motor.vcxproj.Up2Date
+C:\Users\emili\OneDrive\Desktop\Motor\Motor\build\bin\x64\Debug\raylib.dll
+C:\Users\emili\OneDrive\Desktop\Motor\Motor\build\bin\x64\Debug\glfw3.dll
+C:\Users\emili\OneDrive\Desktop\Motor\Motor\build\obj\x64\Debug\Motor.vcxproj.Up2Date

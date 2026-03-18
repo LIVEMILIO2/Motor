@@ -6,6 +6,7 @@
 #include "Log.h"
 #include "FlappyBirdScene.h"
 #include "InstructionsScene.h"
+
 MenuScene::MenuScene()
 {
    
@@ -57,9 +58,13 @@ void MenuScene::draw()
     DrawText("Menu Scene!", 190, 200, 20, LIGHTGRAY);
     Rectangle playBtn = { 200, 100, 200, 40 };
     Rectangle instrBtn = { 200, 160, 200, 40 };
+    Rectangle json = { 200, 220, 200, 40 };
     if (GuiButton(playBtn, "Play Flappy Bird")) {
         SceneManager::instance().changeScene(&FlappyBirdScene::instance());
     }
+    if(GuiButton(json, "Prueba Json")) {
+        SceneManager::instance().changeScene(&PlayScene::instance());
+	}
     if (GuiButton(instrBtn, "Instructions")) {
         SceneManager::instance().changeScene(&InstructionsScene::instance());
     }

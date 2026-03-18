@@ -83,8 +83,8 @@ void PlayScene::load()
                 addEntity(physics.makeBox(data));
             }
         }
-		//printf("Tipo de objeto en JSON: %s\n", type.c_str());
-        //std::cout << x << std::endl;
+	  //  printf("Tipo de objeto en JSON: %s\n", type.c_str());
+       // std::cout << x << std::endl;
     }
     else {
         printf("ERROR: No se pudo abrir el archivo JSON\n");
